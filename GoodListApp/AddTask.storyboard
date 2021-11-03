@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97e-T5-a2b">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddTask-->
+        <scene sceneID="ri7-dy-vCx">
+            <objects>
+                <viewController id="97e-T5-a2b" customClass="AddTaskViewController" customModule="GoodListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2F-EF-l1o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1OQ-W4-HKE">
+                                <rect key="frame" x="80" y="30" width="254" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="5bn-ZY-nvH"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="High"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Low"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-Yw-y0m">
+                                <rect key="frame" x="80" y="91" width="254" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="gpx-2L-ylg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U44-GC-Mxp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QaA-Yw-y0m" firstAttribute="top" secondItem="1OQ-W4-HKE" secondAttribute="bottom" constant="30" id="7J7-F7-fam"/>
+                            <constraint firstItem="QaA-Yw-y0m" firstAttribute="centerX" secondItem="M2F-EF-l1o" secondAttribute="centerX" id="Ixg-gj-kHn"/>
+                            <constraint firstItem="1OQ-W4-HKE" firstAttribute="top" secondItem="U44-GC-Mxp" secondAttribute="top" constant="30" id="XAr-hg-50v"/>
+                            <constraint firstItem="1OQ-W4-HKE" firstAttribute="centerX" secondItem="M2F-EF-l1o" secondAttribute="centerX" id="jWB-u2-qHZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AddTask" id="hP9-lS-ejV">
+                        <barButtonItem key="rightBarButtonItem" title="save" id="i5W-9I-1wb"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Rn-d5-gQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

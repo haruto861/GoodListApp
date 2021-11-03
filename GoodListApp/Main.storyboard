@@ -55,7 +55,13 @@
                             <constraint firstItem="toy-LH-8MS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yTF-Xo-K62"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GoodList" id="nAW-PJ-51W"/>
+                    <navigationItem key="navigationItem" title="GoodList" id="nAW-PJ-51W">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="fPr-eq-H9D">
+                            <connections>
+                                <segue destination="Crc-tF-Q5E" kind="show" id="vYa-uC-2c5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -65,7 +71,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+            <point key="canvasLocation" x="752" y="82"/>
+        </scene>
+        <!--AddTask-->
+        <scene sceneID="fOw-To-JyN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTask" id="Crc-tF-Q5E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bIL-VX-N2o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOX-Hd-YLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y3G-OW-chl">
@@ -88,6 +104,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,6 +17,15 @@ final class TaskListViewController: UIViewController {
     }
     @IBOutlet private weak var prioritySegmentedControl: UISegmentedControl!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        
+    }
+
 }
 
 extension TaskListViewController: UITableViewDelegate {
@@ -25,6 +34,10 @@ extension TaskListViewController: UITableViewDelegate {
 
 
 extension TaskListViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
