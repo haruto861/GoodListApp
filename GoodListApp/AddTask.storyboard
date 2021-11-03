@@ -46,11 +46,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AddTask" id="hP9-lS-ejV">
-                        <barButtonItem key="rightBarButtonItem" title="save" id="i5W-9I-1wb"/>
+                        <barButtonItem key="rightBarButtonItem" title="save" id="i5W-9I-1wb">
+                            <connections>
+                                <segue destination="nB8-LS-R1U" kind="unwind" unwindAction="unwindSegueWithSegue:" id="INC-th-gha"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Rn-d5-gQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nB8-LS-R1U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1967" y="82"/>
         </scene>

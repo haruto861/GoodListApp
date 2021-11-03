@@ -16,6 +16,7 @@
 		F1A1F11B27325C6A00CA6657 /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F11A27325C6A00CA6657 /* AddTask.storyboard */; };
 		F1A1F11D27325CAF00CA6657 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1F11C27325CAF00CA6657 /* AddTaskViewController.swift */; };
 		F1A1F11F27325F3800CA6657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F11E27325F3800CA6657 /* Main.storyboard */; };
+		F1A1F12227325FDB00CA6657 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1F12127325FDB00CA6657 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F1A1F11A27325C6A00CA6657 /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
 		F1A1F11C27325CAF00CA6657 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		F1A1F11E27325F3800CA6657 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F1A1F12127325FDB00CA6657 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F7C1075B1F655B8D5F72C285 /* Pods-GoodListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodListApp.debug.xcconfig"; path = "Target Support Files/Pods-GoodListApp/Pods-GoodListApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 		F1A1F1022732559C00CA6657 /* GoodListApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1A1F12027325FC800CA6657 /* Models */,
 				F1A1F1172732571C00CA6657 /* Controllers */,
 				F1A1F1032732559C00CA6657 /* AppDelegate.swift */,
 				F1A1F1052732559C00CA6657 /* SceneDelegate.swift */,
@@ -103,6 +106,14 @@
 				F1A1F11C27325CAF00CA6657 /* AddTaskViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1A1F12027325FC800CA6657 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1A1F12127325FDB00CA6657 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			files = (
 				F1A1F1042732559C00CA6657 /* AppDelegate.swift in Sources */,
 				F1A1F11D27325CAF00CA6657 /* AddTaskViewController.swift in Sources */,
+				F1A1F12227325FDB00CA6657 /* Task.swift in Sources */,
 				F1A1F1062732559C00CA6657 /* SceneDelegate.swift in Sources */,
 				F1A1F1192732574300CA6657 /* TaskListViewController.swift in Sources */,
 			);
