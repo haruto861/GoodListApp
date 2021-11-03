@@ -15,7 +15,7 @@
 		F1A1F1192732574300CA6657 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1F1182732574300CA6657 /* TaskListViewController.swift */; };
 		F1A1F11B27325C6A00CA6657 /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F11A27325C6A00CA6657 /* AddTask.storyboard */; };
 		F1A1F11D27325CAF00CA6657 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1F11C27325CAF00CA6657 /* AddTaskViewController.swift */; };
-		F1A1F11F27325F3800CA6657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F11E27325F3800CA6657 /* Main.storyboard */; };
+		F1A1F11F27325F3800CA6657 /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F11E27325F3800CA6657 /* TaskList.storyboard */; };
 		F1A1F12227325FDB00CA6657 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1F12127325FDB00CA6657 /* Task.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		F1A1F1182732574300CA6657 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		F1A1F11A27325C6A00CA6657 /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
 		F1A1F11C27325CAF00CA6657 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		F1A1F11E27325F3800CA6657 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F1A1F11E27325F3800CA6657 /* TaskList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
 		F1A1F12127325FDB00CA6657 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F7C1075B1F655B8D5F72C285 /* Pods-GoodListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodListApp.debug.xcconfig"; path = "Target Support Files/Pods-GoodListApp/Pods-GoodListApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +91,7 @@
 				F1A1F1032732559C00CA6657 /* AppDelegate.swift */,
 				F1A1F1052732559C00CA6657 /* SceneDelegate.swift */,
 				F1A1F11A27325C6A00CA6657 /* AddTask.storyboard */,
-				F1A1F11E27325F3800CA6657 /* Main.storyboard */,
+				F1A1F11E27325F3800CA6657 /* TaskList.storyboard */,
 				F1A1F10C2732559E00CA6657 /* Assets.xcassets */,
 				F1A1F10E2732559E00CA6657 /* LaunchScreen.storyboard */,
 				F1A1F1112732559E00CA6657 /* Info.plist */,
@@ -179,7 +179,7 @@
 				F1A1F1102732559E00CA6657 /* LaunchScreen.storyboard in Resources */,
 				F1A1F11B27325C6A00CA6657 /* AddTask.storyboard in Resources */,
 				F1A1F10D2732559E00CA6657 /* Assets.xcassets in Resources */,
-				F1A1F11F27325F3800CA6657 /* Main.storyboard in Resources */,
+				F1A1F11F27325F3800CA6657 /* TaskList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +382,7 @@
 				INFOPLIST_FILE = GoodListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TaskList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -410,7 +410,7 @@
 				INFOPLIST_FILE = GoodListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TaskList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

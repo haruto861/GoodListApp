@@ -48,11 +48,16 @@
                     <navigationItem key="navigationItem" title="AddTask" id="hP9-lS-ejV">
                         <barButtonItem key="rightBarButtonItem" title="save" id="i5W-9I-1wb">
                             <connections>
-                                <segue destination="nB8-LS-R1U" kind="unwind" unwindAction="unwindSegueWithSegue:" id="INC-th-gha"/>
+                                <action selector="didTapSaveButton:" destination="97e-T5-a2b" id="abi-nf-7Q6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="1OQ-W4-HKE" id="4PY-hM-nVr"/>
+                        <outlet property="titleTextFiled" destination="QaA-Yw-y0m" id="3fR-OX-avL"/>
+                        <segue destination="nB8-LS-R1U" kind="unwind" identifier="toAdd" unwindAction="unwindSegueWithSegue:" id="ZLB-dX-Nhu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Rn-d5-gQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="nB8-LS-R1U" userLabel="Exit" sceneMemberID="exit"/>
